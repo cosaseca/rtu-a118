@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# Start the network....
+#
+
+hwclock -f /dev/rtc1 -s
+ifconfig eth1 up
+sleep 1
+#udhcpc -i eth1
+#ifconfig eth1 192.168.31.149 netmask 255.255.255.0
+telnetd
+httpd -h /var/www
+ntpd -p 133.100.11.8
+
+exit $?
+

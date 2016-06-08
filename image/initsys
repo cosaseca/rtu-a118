@@ -1,0 +1,30 @@
+#!/bin/sh
+cp ./busybox /bin
+cp ./data.db /usr/share
+cp ./ioexport /bin
+cp ./libz.so.1.2.7 /lib/libz.so.1
+cp ./libcJSON.so /lib/libcJSON.so
+cp ./libsqlite3.so.0.8.6 /lib/libsqlite3.so.0
+cp ./localtime /etc
+cp ./httpd.conf /etc
+cp ./php.ini /etc
+ln -sf /bin/busybox /bin/ntpd
+ln -sf /bin/busybox /bin/telnetd
+ln -sf /bin/busybox /bin/httpd
+cp ./config.json /usr/share
+cp ./map0.csv /usr/share
+cp ./map1.csv /usr/share
+cp ./map_001.csv /usr/share
+cp ./map_003.csv /usr/share
+cp ./map_004.csv /usr/share
+cp ./netinit /bin
+cp ./php-cgi /bin
+cp ./S50rtu_a118 /etc/init.d
+cp ./rtu_a118 /bin
+cp ./inittab /etc
+mkdir /var/www/upload
+cp ./index.html /var/www
+cp ./upload.html /var/www
+cp ./upload.php /var/www
+cp ./test.php /var/www
+mv /etc/securetty /etc/securetty.back

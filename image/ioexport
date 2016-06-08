@@ -1,0 +1,90 @@
+#!/bin/sh
+
+let "a = 1 * 32 + 8"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+echo 1 > /sys/class/gpio/gpio$a/value
+
+let "a = 1 * 32 + 9"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+echo 0 > /sys/class/gpio/gpio$a/value
+
+let "a = 2 * 32 + 0"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 2 * 32 + 1"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+echo 1 > /sys/class/gpio/gpio$a/value
+
+let "a = 1 * 32 + 30"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+echo 1 > /sys/class/gpio/gpio$a/value
+
+let "a = 3 * 32 + 0"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+echo 1 > /sys/class/gpio/gpio$a/value
+
+let "a = 3 * 32 + 1"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 2"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+echo 1 > /sys/class/gpio/gpio$a/value
+
+let "a = 0 * 32 + 20"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 0 * 32 + 29"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 19"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 17"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 14"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 15"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 16"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+#echo 0 > /sys/class/gpio/gpio$a/value
+
+let "a = 3 * 32 + 20"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 21"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 0 * 32 + 4"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 16"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+let "a = 3 * 32 + 21"
+echo $a > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio$a/direction
+
+exit $?

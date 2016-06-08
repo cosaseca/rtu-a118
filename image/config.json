@@ -1,0 +1,76 @@
+{
+	"tcp_server":{
+		"name": "server",
+		"info": "tcp server",
+		"node": "::",
+		"service": "10086",
+		"debug": "off"
+	},
+	"tcp_client_test":{
+		"name": "client",
+		"info": "tcp client",
+		"node": "/dev/ttyUSB4",
+		"service": "10086",
+		"rate": 115200,
+		"type": "rtu",
+		"debug": "off"
+	},
+	"udp_server":{
+		"name": "server",
+		"info": "udp server",
+		"node": "::",
+		"service": "10086",
+		"debug": "off"
+	},
+	"rtu_client_test":{
+		"name": "client0",
+		"info": "tcp client",
+		"node": "fe80::be6a:29ff:fe51:efe6%eth0",
+		"service": "10086",
+		"type": "tcp",
+		"debug": "off"
+	},
+	"webserver":{
+		"name": "webserver0",
+		"info": "web server",
+		"node": "::",
+		"service": "10010",
+		"debug": "off"
+	},
+	"zigbee":{
+		"name": "zigbee",
+		"info": "zigbee module",
+		"dev": "/dev/ttyO1",
+		"rate": 9600,
+		"debug": "off"
+	},
+	"modbus485_slave":{
+		"name": "slave",
+		"info": "modbus 485 server module",
+		"dev": "/dev/ttyO2",
+		"rate": 9600,
+		"debug": "off"
+	},
+	"modbus485_master":{
+		"name": "master",
+		"info": "modbus 485 client module",
+		"dev": "/dev/ttyO4",
+		"rate": 9600,
+		"debug": "off"
+	},
+	"modbus232_server":{
+		"name": "server",
+		"info": "modbus 232 server module",
+		"dev": "/dev/ttyO3",
+		"rate": 115200,
+		"debug": "off"
+	},
+	"data":{
+		"name":"data",
+		"info": "history data",
+		"db_path": "/usr/share/data.db"
+	},
+	"gpio":{                     
+                "name": "leds"
+        }
+}

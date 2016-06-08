@@ -1,0 +1,4 @@
+all:
+	$(CC) -o bandwidth-client bandwidth-client.c ../src/*.c $(INC) $(LIBS)
+clean:
+	rm -rf *.o bandwidth-client

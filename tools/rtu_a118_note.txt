@@ -1,0 +1,58 @@
+sudo apt-get install git-core gnupg flex bison gperf build-essential
+sudo apt-get install zip curl zlib1g-dev libc6-dev
+sudo apt-get install x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386
+sudo apt-get install libgl1-mesa-glx:i386 libgl1-mesa-dev
+sudo apt-get install mingw32 tofrodos python-markdown libxml2-utils xsltproc
+sudo apt-get install readline-common libreadline6-dev libreadline6 libreadline-dev
+sudo apt-get install libreadline6-dev:i386 libreadline6:i386 bzip2 libbz2-1.0
+sudo apt-get install libsdl1.2-dev libesd0-dev squashfs-tools pngcrush schedtool
+sudo apt-get install libwxgtk2.8-dev python u-boot-tools texi2html texinfo gettext
+
+
+sudo apt-get install libncurses5-dev
+
+sudo apt-get install u-boot-tools
+
+sudo apt-get install bison flex
+
+setenv ipaddr 192.168.5.118
+setenv serverip 192.168.5.117
+setenv serverip 192.168.5.124
+tftpboot 0x82000000 uImage
+nand erase 0x100000 0x400000
+nand write 0x82000000 0x100000 0x400000
+
+setenv ipaddr 192.168.31.175
+
+
+setenv serverip 192.168.31.208
+
+tftpboot 0x82000000 uImage
+nand erase 0x100000 0x400000
+nand write 0x82000000 0x100000 0x400000
+
+
+setenv ipaddr 192.168.31.224
+
+
+setenv serverip 192.168.31.131
+
+tftpboot 0x82000000 uImage
+nand erase 0x100000 0x400000
+nand write 0x82000000 0x100000 0x400000
+
+
+ip -6 addr add 2002:c0a8:115:1:be6a:29ff:fe51:efe5/64 dev eth0
+
+fe80::be6a:29ff:fe51:efe5
+
+ip -6 addr add 2002:c0a8:115:1:be6a:29ff:fe51:efe5/64 dev eth0
+
+
+ping6 2002:c0a8:115:1:be6a:29ff:fe4e:5bf3
+
+
+ping6 2002:c0a8:115:1:20c:29ff:fe51:1ef5
+
+abcdefghijklmnopqrstuvwxyz
+

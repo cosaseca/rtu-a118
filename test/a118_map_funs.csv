@@ -1,0 +1,1 @@
+函数名,编号,说明gettime_mon,1,月份gettime_day,2,日子gettime_year,3,年份gettime_hour,4,小时gettime_min,5,分钟gettime_sec,6,秒gpio_do0_set,7,DO0gpio_do1_set,8,DO1gpio_do2_set,9,DO2gpio_do3_set,10,DO3gpio_do4_set,11,DO4gpio_do5_set,12,DO5gpio_do6_set,13,DO6gpio_do7_set,14,DO7rtu_reset_flash1,15,重新设置
